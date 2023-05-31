@@ -1,0 +1,10 @@
+.fade-bg-image {
+    position: relative;
+    width: 100%;
+    /* set to desired width */
+    height: 300px;
+    /* set to desired height */
+    background-image: url('../../public/resources/home_background.jpg');
+    background-size: cover;
+    background-position: center;
+}
