@@ -25,7 +25,7 @@ const ImageDisplay = ({ travels }) => (
       <div className="image-set" key={index} style={{ padding: 50 }}>
         <Col>
           <h1>{getDateString(travel.startTime)}</h1>
-          {(travel.images.images != null && travel.images.images != []) && <ImageSet images={travel.images.images} />}
+          {(travel.images != null && travel.images != []) && <ImageSet images={travel.images} />}
           <h1>{travel.title}</h1>
           <h2>{travel.description}</h2>
         </Col>
@@ -37,10 +37,9 @@ const ImageDisplay = ({ travels }) => (
 
 export default ImageDisplay;
 
-function getDateString(dateStr) {
-  // const dateStr = this.props.dateStr;  // Assuming dateStr looks like "2023-05-30T14:42:05.056223+00:00"
+function getDateString(startTime) {
 
-  const dateObj = new Date(dateStr);
+  const dateObj = new Date(startTime);
 
   const year = dateObj.getFullYear();
   // getMonth() returns 0-11, we add 1 to get 1-12

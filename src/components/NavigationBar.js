@@ -14,6 +14,9 @@ function NavigationBar() {
                         <Nav.Link as={Link} to='/upload' >
                             上传
                         </Nav.Link>
+                        <Nav.Link as={Link} to='/map' >
+                            足迹
+                        </Nav.Link>
                         <Nav.Link as={Link} to='/spin' >
                             转盘
                         </Nav.Link>

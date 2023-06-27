@@ -6,6 +6,8 @@ import Home from './pages/Home';
 import Error from './pages/Error';
 import Upload from './pages/Upload';
 import SpinnerWheel from './pages/SpinnerWheel';
+// import MapComponent from './components/MapComponent';
+import MapRecord from './pages/MapRecord';
 
 function App() {
   return (
@@ -16,6 +18,7 @@ function App() {
           <Route index element={<Home />} />
           <Route path='upload' element={<Upload />} />
           <Route path='spin' element={<SpinnerWheel />} />
+          <Route path='map' element={<MapRecord />} />
           <Route path='*' element={<Error />} />
         </Route>
       </Routes>
