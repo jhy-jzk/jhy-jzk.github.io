@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Container, Navbar, NavDropdown, Offcanvas, Nav } from 'react-bootstrap';
 
 
@@ -6,13 +7,17 @@ function NavigationBar() {
     return (
         <Navbar bg="light" expand="lg" fixed="top">
             <Container>
-                <Navbar.Brand>React-Bootstrap</Navbar.Brand>
+                <Navbar.Brand as={Link} to='/' >jhy-jzk</Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="me-auto">
-                        <Nav.Link>Home</Nav.Link>
-                        <Nav.Link>Link</Nav.Link>
-                        <NavDropdown title="Dropdown" id="basic-nav-dropdown">
+                        <Nav.Link as={Link} to='/upload' >
+                            上传
+                        </Nav.Link>
+                        <Nav.Link as={Link} to='/spin' >
+                            转盘
+                        </Nav.Link>
+                        {/* <NavDropdown title="Dropdown" id="basic-nav-dropdown">
                             <NavDropdown.Item>Action</NavDropdown.Item>
                             <NavDropdown.Item>
                                 Another action
@@ -22,7 +27,7 @@ function NavigationBar() {
                             <NavDropdown.Item>
                                 Separated link
                             </NavDropdown.Item>
-                        </NavDropdown>
+                        </NavDropdown> */}
                     </Nav>
                 </Navbar.Collapse>
             </Container>
