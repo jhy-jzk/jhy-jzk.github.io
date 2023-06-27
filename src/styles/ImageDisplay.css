@@ -1,7 +1,11 @@
 .carousel-inner img {
-    margin: auto;
+    object-fit: initial;
+    margin: 0;
+    width: 100%;
+    height: auto;
 }
 
 .carousel-item {
+    object-fit: cover;
     text-align: center;
 }

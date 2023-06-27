@@ -9,7 +9,7 @@ const ImageSet = ({ images }) => (
       <Carousel.Item key={index}>
         <img
           src={image}
-          style={{ width: 'auto', height: '600px' }}
+        // style={{ width: 'auto', height: 'auto', objectFit: "cover" }}
         />
         {/* <Carousel.Caption>
           <h3>{image.title}</h3>
